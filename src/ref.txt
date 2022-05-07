@@ -1,0 +1,7 @@
+props
+slots
+ref
+provide/inject
+watch
+computed
+vuex

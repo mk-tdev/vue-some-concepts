@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-header appTitle="Vue Catchup!"></the-header>
+
+  <the-layout-container>
+    <TodoListContainer />
+
+    <TabViewContainer />
+  </the-layout-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoListContainer from "./containers/TodoListContainer.vue";
+import TabViewContainer from "./containers/TabViewContainer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TodoListContainer,
+    TabViewContainer,
+  },
+  setup() {},
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
