@@ -15,6 +15,7 @@
 
         <button @click="addTodo">Add</button>
         <span class="sub-text">{{ todosState.newTodoText }}</span>
+        
         <span class="warn-text" v-if="showWarning"
           >Too Long! But it's okay!</span
         >
@@ -77,6 +78,8 @@ export default {
     });
 
     const todoStatus = computed(() => {
+      // calling 
+
       return todosState.todos.filter((todo) => !todo.done).length;
     });
 
@@ -87,7 +90,7 @@ export default {
         timeCreated: new Date(),
         done: false,
       };
-      todosState.todos = [...todosState.todos, newtodo];
+      todosState.todos = [newtodo, ...todosState.todos];
       store.dispatch("todos/addTodo", newtodo);
 
       todosState.newTodoText = "";

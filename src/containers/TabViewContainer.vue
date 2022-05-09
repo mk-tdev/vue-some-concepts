@@ -1,6 +1,5 @@
 <template>
   <TabWrapperContainer>
-    
     <Tab title="Tab 1">
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
@@ -11,7 +10,7 @@
         consectetur eveniet! Est?
       </div>
     </Tab>
-    
+
     <Tab title="Tab 2">
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -25,6 +24,17 @@
         ipsa iusto, atque est, vitae fugiat doloremque nulla tempore, veritatis
         ea repellat totam necessitatibus iure. Cum, neque! Quo dolorum
         laboriosam ipsum optio architecto earum?
+      </div>
+    </Tab>
+
+    <Tab title="Tab 3 Title">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+        exercitationem officiis dolorum iste culpa praesentium explicabo
+        adipisci veritatis. Saepe, odio rerum eum ex non esse ad laboriosam
+        ratione mollitia officia iusto natus libero inventore dolorum quod porro
+        veniam, rem corrupti quis aliquid. Beatae non assumenda, ea animi
+        consectetur eveniet! Est?
       </div>
     </Tab>
   </TabWrapperContainer>

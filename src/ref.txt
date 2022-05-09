@@ -1,7 +1,11 @@
 props
 slots
-ref
+ref, reactive
 provide/inject
 watch
 computed
-vuex
+hooks
+vuex - namespace
+
+
+https://github.com/mk-tdev/vue-some-concepts

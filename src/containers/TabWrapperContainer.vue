@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <h2>Tab container</h2>
+    <h2>Tab container using slots</h2>
     <ul>
       <li
         v-for="title in tabsTitles"
@@ -11,8 +11,10 @@
         {{ title }}
       </li>
     </ul>
+
+
     <div class="slot-container">
-      <slot></slot>
+      <slot ></slot>
     </div>
   </div>
 </template>

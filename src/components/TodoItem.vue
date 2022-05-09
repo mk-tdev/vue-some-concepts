@@ -4,7 +4,7 @@
     :class="{ done: todo.done, 'not-done': !todo.done, mobile: width < 600 }"
   >
     <div>
-      <div>{{ todo.text }}</div>
+      <div :class="{ 'todo-completed': todo.done }">{{ todo.text }}</div>
       <div class="sub-text" :class="{ mobile: width < 600 }">
         {{ todo.timeCreated }}
       </div>
@@ -85,6 +85,9 @@ button.remove {
 .todo-item-actions {
   display: flex;
   flex-wrap: nowrap;
+}
+.todo-completed {
+  text-decoration: line-through;
 }
 .mobile {
   color: white;
